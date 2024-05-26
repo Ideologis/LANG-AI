@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: black;
+}
+
+.container {
+  position: absolute;
+  top: 30%;
+  left: 7%;
+  height: 500px;
+  width: 400px;
+  background: rgba(240, 135, 255, 0.3);
+  filter: blur(190.493px);
+  border-radius: 75.7971px;
+  /* overflow: hidden; */
+}
+
+header {
+  padding: 12px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app_logo {
+  display: flex;
+  align-items: center;
+}
+
+.app_logo img {
+  width: 30px;
+  margin-right: 8px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+ul li {
+  color: white;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+ul li a {
+  color: white;
+}
+
+/* MAIN-SECTION */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .image {
+  width: 420px;
+  height: 420px;
+}
+
+.right_text h3 {
+  margin: 10px 0px;
+  color: white;
+}
+
+.gemi {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.right_text h1 {
+  margin: 10px 0px;
+  color: white;
+}
+
+.right_text p {
+  text-align: left;
+  line-height: 1.5;
+  margin: 20px 0px;
+  white-space: pre-wrap;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border: none;
+  border-radius: 12px;
+  background-color: rgba(255, 247, 247, 0.1);
+}
+
+button img {
+  margin: 10px;
+}
+
+.btns p {
+  margin: 10px;
+  color: white;
+  font-size: 0.9em;
+}
+
+/* MEDIA-QUERY-FIRSTPAGE  */
+@media only screen and (max-width: 768px) {
+  .container {
+    display: none;
+  }
+
+  header {
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  .app_logo {
+    margin-bottom: 10px;
+  }
+  .app_logo h3 {
+    font-size: 0.9em;
+  }
+  ul {
+    align-items: center;
+  }
+
+  ul li {
+    font-size: 0.9em;
+    margin-bottom: 8px;
+  }
+  main {
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 10px;
+  }
+
+  main .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .right_text h3 {
+    color: #745f77;
+    font-size: 0.9em;
+    margin: 7px 0;
+  }
+
+  .right_text h1 {
+    font-size: 1.3em;
+    margin: 4px 0;
+  }
+
+  .right_text p {
+    font-size: 0.9em;
+    margin: 15px 0;
+  }
+
+  .btns {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .btns p {
+    margin: 10px;
+    color: white;
+    font-size: 0.9em;
+  }
+}
